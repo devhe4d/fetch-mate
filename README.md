@@ -26,9 +26,11 @@ or
 yarn add fetch-mate
 ```
 
-You can use fetch-mate as a single hook to wrap your data source calls and add options like isLoading, isError, onSuccess, and onError, or you could also use fetch-mate as a global store and caching system.
 
-by default fetch-mate doesn't cache anything, its just a simple hook to wrap around your data source:
+## Quick Start
+fetch-mate can act as simple as a single custom hook around your data source with additional options to control your data flow, options like: isLoading, isError, isDone, error and of course the data itself.
+
+by default fetch-mate doesn't cache anything, its just a single hook do its job:
 
 ```javascript
  const { data, isLoading, error } = useFetchMate({
@@ -36,7 +38,7 @@ by default fetch-mate doesn't cache anything, its just a simple hook to wrap aro
     });
  ```
  
- but if you want to use it as a cache layer, you need to wrap your root App with `FetchMateStore`:
+but if you want to have a global store and a cache layer, fetch-mate also has option for it, just use FetchMateStore as your global store 
  ```javascript
  const fetchMateConfig = new FetchMateConfig({
     ttl: 1000 * 60 * 60 * 24,
