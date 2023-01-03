@@ -53,7 +53,7 @@ but if you want to have a global store and a cache layer, fetch-mate also has op
 
 ## Contribution 🥳
 We welcome contributions to fetch-mate!
-fetch-mate still is in alpha release, if you're a #beginner looking to practice contributing to an open source project, or an experienced developer looking to help out, we'd love to have you on board. Whether you want to fix a bug, add a new feature, or simply improve the documentation, every contribution helps us make fetch-mate better.
+fetch-mate still is in alpha release, if you're a beginner looking to practice contributing to an open source project, or an experienced developer looking to help out, we'd love to have you on board. Whether you want to fix a bug, add a new feature, or simply improve the documentation, every contribution helps us make fetch-mate better.
 
 If you're new to open source contributions, check out the [Open Source Guides](https://opensource.guide/) for helpful resources and tips. Then, take a look at our [issues](https://github.com/devhe4d/fetch-mate/issues) page to see where you can help out.
 
