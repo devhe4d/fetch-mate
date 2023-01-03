@@ -1,0 +1,44 @@
+{
+    "name": "fetch-mate",
+    "version": "0.0.1",
+    "description": "A simple fetch wrapper for client-side HTTP requests with caching abilities",
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "types": "dist/esm/index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/devhe4d/fetch-mate"
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "rm -rf dist/ && prettier --write src/ && npm run build:esm && npm run build:cjs",
+        "build:esm": "tsc",
+        "build:cjs": "tsc --module commonjs --outDir dist/cjs"
+    },
+    "keywords": [
+        "api",
+        "react",
+        "cache",
+        "cache api"
+    ],
+    "author": "@devhe4d",
+    "publishConfig": {
+        "@devhe4d:registry": "https://npm.pkg.github.com"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^18.11.9",
+        "@types/react": "^18.0.25",
+        "@types/react-dom": "^18.0.9",
+        "prettier": "^2.8.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "typescript": "^4.9.3"
+    },
+    "peerDependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    }
+}
